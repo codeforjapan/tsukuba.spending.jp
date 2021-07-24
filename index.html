@@ -7,6 +7,7 @@ title: The Daily Bread
   yepnope({
     load: [
       // 'http://wheredoesmymoneygo.org/wp-content/themes/wdmmg/wdmmg.css',
+      "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/themes/ui-lightness/jquery-ui.css",
       "/js/libs/base64.js",
       "/js/libs/underscore.js",
       "/js/libs/raphael-min.js",
@@ -59,10 +60,7 @@ title: The Daily Bread
     <h2 style="width: 240px; display: inline-block; vertical-align: top">
       あなたの世帯タイプは？
     </h2>
-    <div
-      id="select-dependents-type"
-      style="width: 450px; display: inline-block"
-    >
+    <div id="select-dependents-type" style="width: 450px; display: inline-block">
       <div class="single">単身世帯</div>
       <div class="family">扶養有り</div>
     </div>
@@ -70,10 +68,8 @@ title: The Daily Bread
   </div>
 
   <div id="preloader" style="text-align: center; padding: 100px">
-    <img src="img/ajax-loader.gif" style="vertical-align: top" /> &nbsp;<span
-      class="txt"
-      >loading javascript libraries</span
-    >
+    <img src="img/ajax-loader.gif" style="vertical-align: top" /> &nbsp;<span class="txt">loading javascript
+      libraries</span>
   </div>
 
   <div id="content-wrap" style="display: none">
