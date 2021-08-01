@@ -152,7 +152,7 @@ OpenSpending.Styles.Cofog = {
     bcolor: '#2A3A03'
   },
   '6': {
-    icon: 'icons/community.svg',
+    icon: 'icons/our-streets.svg',
     color: '#418fe2',
     bcolor: '#EC2406'
   },
