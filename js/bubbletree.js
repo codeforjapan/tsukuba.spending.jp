@@ -1350,6 +1350,7 @@ BubbleTree.Utils.amount2rad = function (a) {
 };
 
 BubbleTree.Utils.formatNumber = function (n) {
+  n = n * 1000
   var prefix = '';
   if (n < 0) {
     n = n * -1;
@@ -1357,9 +1358,8 @@ BubbleTree.Utils.formatNumber = function (n) {
   }
   if (n >= 1000000000000) return prefix + Math.round(n / 100000000000) / 10 + '兆';
   if (n >= 100000000) return prefix + Math.round(n / 10000000) / 10 + '億';
-  if (n >= 10000) return prefix + Math.round(n / 1000) / 10 + '百万';
+  if (n >= 10000) return prefix + Math.round(n / 1000) / 10 + '万';
   else return prefix + n;
-
 };
 /*jshint undef: true, browser:true, jquery: true, devel: true, smarttabs: true */
 /*global BubbleTree */
